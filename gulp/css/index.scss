@@ -1,0 +1,9 @@
+/**
+ * Importación de archivos (en orden de uso).
+*/
+@import './normalize.scss';
+@import './mini.scss';
+@import '../node_modules/tiny-slider/src/tiny-slider.scss';
+@import './site/colors.scss';
+@import './site/mixins.scss';
+@import './global.scss';

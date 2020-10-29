@@ -1,0 +1,33 @@
+{
+  "name": "menu-digital",
+  "version": "1.0.0",
+  "description": "Gulp para Menú digital",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Julcesar17/menu-digital.git"
+  },
+  "keywords": [
+    "wasser"
+  ],
+  "author": "Julio Herrera",
+  "license": "ISC",
+  "homepage": "julcesar.com",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0",
+    "tiny-slider": "^2.9.2"
+  }
+}
