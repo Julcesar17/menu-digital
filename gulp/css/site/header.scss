@@ -1,0 +1,110 @@
+.header-menu{
+    border-bottom: 3px solid $blue;
+    height: 80px;
+    position: relative;
+    .logo-content{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        color: $white;
+        text-align: start;
+        h1{
+            font-family: 'Roboto', system-ui;
+            margin: 0;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+    }
+    #toggle{
+        display: none;
+        &:checked ~ .nav-icon{
+            background: transparent;
+        }
+        &:checked ~ .nav-icon:before{
+            transform: rotate(-225deg);
+            margin-top: 0;
+        }
+        &:checked ~ .nav-icon:after{
+            transform: rotate(225deg);
+            margin-top: 0;
+        }
+    }
+    #toggle-btn{
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        padding: 0;
+    }
+    .nav-icon{
+        position: absolute;
+        height: 4px;
+        width: 32px;
+        right: 20px;
+        z-index: 900;
+        border-radius: 3px;
+        background: $white;
+        transition: all .25s;
+        margin: 36px 0;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 4px;
+            border-radius: 3px;
+            background: $white;
+            transition: all .25s;
+            width: 32px;
+            margin-top: -14px;
+            right: 0;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 32px;
+            z-index: 900;
+            border-radius: 3px;
+            background: $white;
+            transition: all .25s;
+            margin-top: 14px;
+            right: 0;
+        }
+    }
+    nav{
+        display: none;
+        ul{
+            background-color: $black;
+            position: fixed;
+            z-index: 100;
+            top: 70px;
+            right: -200px;
+            padding: 0 20px;
+            opacity: 0;
+            -webkit-transition: .4s;
+            transition: .4s;
+            &.show{
+                right: 20px;
+                opacity: 1;
+            }
+            .item{
+                border-bottom: 1px solid $blue;
+                width: 150px;
+                &:last-child{
+                    border-bottom: 0;
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    padding: 15px 0px;
+                    color: $white;
+                    font-family: 'Roboto Slab', system-ui;
+                }
+            }
+        }
+    }
+}

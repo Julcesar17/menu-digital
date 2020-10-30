@@ -1,0 +1,24 @@
+.footer-menu{
+    border-top: 3px solid $blue;
+    padding: 15px 0;
+    height: 106px;
+    .rrss-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        a{
+            width: 40px;
+            margin: 0 15px;
+        }
+    }
+    p{
+        text-align: center;
+        font-weight: 400;
+        margin: 0;
+        a{
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+}

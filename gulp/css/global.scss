@@ -1,11 +1,9 @@
 body {
   color: $text;
   font-size: 16px;
-  font-family: system-ui;
+  font-family: 'Poppins', system-ui;
   position: relative;
-  background-position: center center;
-  background-repeat: repeat-y;
-  background-size: cover;
+  background-color: $bg-black;
 }
 
 *{
@@ -47,4 +45,11 @@ a{
   &:visited{
     text-decoration: none;
   }
+}
+
+
+.page{
+  height: calc(100vh - 186px);
+  min-height: 550px;
+  text-align: center;
 }

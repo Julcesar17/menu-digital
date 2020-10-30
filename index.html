@@ -3,11 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú digital</title>
+    <title>Menú Digital | Tamales Fiesta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 </head>
 <body>
-    <p>Menú digital</p>
+    <header id="header-menu" class="header-menu">
+        <a class="logo-content" href="./index.html">
+            <h1>Tamales<br>Fiesta</h1>
+        </a>
+        <input id="toggle" type="checkbox">
+        <label id="toggle-btn" for="toggle"></label>
+        <div class="nav-icon"></div>
+        <nav>
+            <ul id="listMenu">
+                <li class="item">
+                    <a href=""></a>
+                </li>
+                <li class="item">
+                    <a href="./categoria/salados.html">Salados</a>
+                </li>
+                <li class="item">
+                    <a href="./categoria/dulces.html">Dulces</a>
+                </li>
+                <li class="item">
+                    <a href="./categoria/especiales.html">Especiales</a>
+                </li>
+                <li class="item">
+                    <a href="./categoria/atoles.html">Atoles</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu-home" class="menu-home page">
+        <div class="container">
+            <p>¡Bienvenidos!</p>
+            <div id="slider-category" class="slider-category">
+                <div class="category">
+                    <a href="./categoria/salados.html">Salados</a>
+                </div>
+                <div class="category">
+                    <a href="./categoria/dulces.html">Dulces</a>
+                </div>
+                <div class="category">
+                    <a href="./categoria/especiales.html">Especiales</a>
+                </div>
+                <div class="category">
+                    <a href="./categoria/atoles.html">Atoles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-menu" class="footer-menu">
+        <div class="container">
+            <div class="rrss-content">
+                <a target="_blank" href="#" title="Ir a Facebook de Tamales Fiesta">
+                    <img src="./assets/images/icons/facebook.png" alt="Logo Facebook">
+                </a>
+                <a target="_blank" href="#" title="Ir a Instagram de Tamales Fiesta">
+                    <img src="./assets/images/icons/instagram.png" alt="Logo Instagram">
+                </a>
+            </div>
+            <p>Menú digital por
+                <a target="_blank" href="https://julcesar.com/" title="Ir a julcesar.com"> Julio Herrera</a>
+            </p>
+        </div>
+    </footer>
+
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
