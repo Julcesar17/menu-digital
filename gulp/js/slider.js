@@ -6,3 +6,11 @@ if(document.getElementById('slider-category')) {
         nav: false
     });
 }
+
+if(document.getElementById('slider-option')) {
+    const optionSlider = tns({
+        container: '.slider-option',
+        items: 1,
+        nav: false
+    });
+}

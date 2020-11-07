@@ -1,0 +1,45 @@
+.menu-category {
+    max-width: 768px;
+    margin: 0 auto;
+    .image-category{
+        max-width: 463px;
+        height: 170px;
+        margin: 0 auto;
+    }
+    .container{
+        height: calc(100% - 217px);
+        min-height: 271px;
+        .tns-outer{
+            height: 100%;
+            .tns-ovh{
+                height: 100%;
+                .tns-inner{
+                    height: 100%;
+                    .slider-option{
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .option{
+                            a{
+                                background-color: rgba(0,0,0,0.7);
+                                color: $white;
+                                text-align: center;
+                                border-radius: 15px;
+                                display: block;
+                                padding: 30px 10px;
+                                font-size: 16px;
+                                img{
+                                    width: 100%;
+                                    max-width: 150px;
+                                    margin:  0 auto 25px;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

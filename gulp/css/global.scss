@@ -49,17 +49,18 @@ a{
 
 .page{
   height: calc(100vh - 186px);
-  min-height: 382px;
+  min-height: 488px;
   text-align: center;
+  padding-top: 20px;
   .container{
     height: 100%;
-    .title{
-      color: $blue;
-      font-family: 'Roboto', system-ui;
-      font-size: 1.5rem;
-      margin: 20px 0;
-      text-transform: uppercase;
-    }
+  }
+  .title{
+    color: $blue;
+    font-family: 'Roboto', system-ui;
+    font-size: 1.5rem;
+    margin: 0px 0 20px;
+    text-transform: uppercase;
   }
 }
 
