@@ -1,1 +1,1 @@
-"use strict";console.log("js");
+"use strict";if(document.getElementById("slider-category"))var categorySlider=tns({container:".slider-category",items:1,nav:!1});

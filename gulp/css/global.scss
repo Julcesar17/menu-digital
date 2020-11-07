@@ -1,6 +1,6 @@
 body {
   color: $text;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Poppins', system-ui;
   position: relative;
   background-color: $bg-black;
@@ -47,9 +47,105 @@ a{
   }
 }
 
-
 .page{
   height: calc(100vh - 186px);
-  min-height: 550px;
+  min-height: 382px;
   text-align: center;
+  .container{
+    height: 100%;
+    .title{
+      color: $blue;
+      font-family: 'Roboto', system-ui;
+      font-size: 1.5rem;
+      margin: 20px 0;
+      text-transform: uppercase;
+    }
+  }
 }
+
+/**
+ * Estilos Sliders
+**/
+
+.tns-outer{
+  position: relative;
+  height: calc(100% - 67px);
+  .tns-ovh{
+    height: calc(100% - 20px);
+    max-height: 538px;
+    width: calc(100% - 70px);
+    margin: 0 auto;
+    .tns-inner{
+      height: 100%;
+    }
+  }
+}
+
+.tns-liveregion{
+  display: none;
+}
+
+.tns-controls{
+  button{
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    background-color: transparent;
+    font-size: 0;
+    width: 25px;
+    height: 40px;
+    border: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    &:first-child{
+      left: 0px;
+      &::before,
+      &::after{
+        content: '';
+        height: 4px;
+        width: 25px;
+        background-color: $white;
+        left: 0px;
+        position: absolute;
+      }
+      &::after{
+        transform: rotate(-225deg);
+        top: 8px;
+      }
+      &::before{
+        transform: rotate(225deg);
+        top: 24px;
+      }
+    }
+    &:last-child{
+      right: 0px;
+      &::before,
+      &::after{
+        content: '';
+        height: 4px;
+        width: 25px;
+        background-color: $white;
+        right: 0px;
+        position: absolute;
+      }
+      &::after{
+        transform: rotate(-225deg);
+        top: 24px;
+      }
+      &::before{
+        transform: rotate(225deg);
+        top: 8px;
+      }
+    }
+    &:disabled,
+    &[disabled]{
+        opacity: 0;
+    }
+  }
+}
+
+/**
+* Fin Estilos Sliders
+*/

@@ -1,0 +1,45 @@
+.menu-home{
+    max-width: 768px;
+    margin: 0 auto;
+    .slider-category{
+        height: 100%;
+        .category{
+            height: 100%;
+            position: relative;
+            border-radius: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            text-align: center;
+            &.salados{
+                background-image: url('../images/salados/salados-slider.png');
+            }
+            &.dulces{
+                background-image: url('../images/dulces/dulces-slider.png');
+            }
+            &.especiales{
+                background-image: url('../images/especiales/especiales-slider.png');
+            }
+            &.atole{
+                background-image: url('../images/atole/atole-slider.png');
+            }
+            a{
+                border: 2px solid $blue;
+                color: $white;
+                font-size: 2rem;
+                text-transform: uppercase;
+                position: absolute;
+                padding: 15px 10px;
+                left: 50%;
+                top: 50%;
+                font-family: 'Roboto', system-ui;
+                font-weight: 700;
+                transform: translate(-50%,-50%);
+                background-color: rgba(0,0,0,0.5);
+                @media(max-width: 360px){
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

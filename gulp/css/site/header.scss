@@ -29,6 +29,17 @@
             transform: rotate(225deg);
             margin-top: 0;
         }
+        &:checked ~ nav ul{
+            right: 20px;
+            opacity: 1;
+        }
+        &:checked ~ nav ul .item a{
+            &:hover,
+            &:visited,
+            &:active{
+                color: $text;
+            }
+        }
     }
     #toggle-btn{
         position: absolute;
@@ -76,9 +87,8 @@
         }
     }
     nav{
-        display: none;
         ul{
-            background-color: $black;
+            background-color: $bg-gray;
             position: fixed;
             z-index: 100;
             top: 70px;
@@ -87,10 +97,6 @@
             opacity: 0;
             -webkit-transition: .4s;
             transition: .4s;
-            &.show{
-                right: 20px;
-                opacity: 1;
-            }
             .item{
                 border-bottom: 1px solid $blue;
                 width: 150px;
@@ -101,7 +107,7 @@
                     display: block;
                     width: 100%;
                     padding: 15px 0px;
-                    color: $white;
+                    color: $text-transparent;
                     font-family: 'Roboto Slab', system-ui;
                 }
             }
