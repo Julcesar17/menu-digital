@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital | Tamales Fiesta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+</head>
+<body>
+
+    <div id="contentHeader"></div>
+
+    <section id="menu-category" class="menu-category page">
+        <h2 class="title">Especiales</h2>
+        <img class="image-category" src="./assets/images/especiales/especiales-home.jpeg" alt="Imagen categoria">
+        <div class="container">
+            <div id="slider-option" class="slider-option">
+                <div class="option">
+                    <a href="#" title="Tamal jarocho" data-name="Tamal jarocho" data-description="Harina de maíz con mole poblano con un pedazo de pollo." data-price="$11.00">
+                        <img src="./assets/images/especiales/especiales.jpeg" alt="Tamal jarocho">
+                        Tamal jarocho
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="card">
+            <span id="modalClose" class="modal-close"></span>
+            <div id="image" class="image-modal"></div>
+            <h3 id="name"></h3>
+            <p id="description"></p>
+            <span class="line"></span>
+            <p>Precio: <span id="price"></span></p>
+        </div>
+    </div>
+
+    <div id="contentFooter"></div>
+
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

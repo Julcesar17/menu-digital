@@ -33,9 +33,11 @@ setTimeout(() => {
         }, false);
     });
 
+    if(option.length > 0){
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove("show");
+            removeDataModal();
+        });
+    }
 
-    closeModal.addEventListener('click', () => {
-        modal.classList.remove("show");
-        removeDataModal();
-    });
 }, 0);
