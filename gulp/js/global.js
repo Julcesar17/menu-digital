@@ -34,7 +34,9 @@ const footerHTML = '<footer id="footer-menu" class="footer-menu">' +
             '</a>' +
         '</div>' +
         '<p>' +
+            '<a href="https://www.google.com/maps/dir/?api=1&destination=19.0629382,-98.1349393&travelmode=driving" target="_blank">' +
             'Dirección: Boulevard Puebla, esquina 4c, col. Bosques de San Sebastián, 72310, Puebla, Puebla.' +
+            '</a>' +
         '</p>' +
     '</div>' +
     '</footer>';
