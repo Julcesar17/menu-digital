@@ -22,7 +22,6 @@ setTimeout(() => {
     [].forEach.call(option, op => {
         op.addEventListener('click', (e)=>{
             e.preventDefault();
-            console.log('op',op);
             let name = op.dataset.name;
             let description = op.dataset.description;
             let price = op.dataset.price;

@@ -33,8 +33,8 @@ const footerHTML = '<footer id="footer-menu" class="footer-menu">' +
                 '<img src="./assets/images/icons/instagram.png" alt="Logo Instagram">' +
             '</a>' +
         '</div>' +
-        '<p>Menú digital por' +
-            '<a target="_blank" href="https://julcesar.com/" title="Ir a julcesar.com"> Julio Herrera</a>' +
+        '<p>' +
+            'Dirección: Boulevard Puebla, esquina 4c, col. Bosques de San Sebastián, 72310, Puebla, Puebla.' +
         '</p>' +
     '</div>' +
     '</footer>';
@@ -44,3 +44,22 @@ const contentHeader = document.getElementById('contentHeader'),
 
 contentHeader.innerHTML = headerHTML;
 contentFooter.innerHTML = footerHTML;
+
+const specifiedElement = document.getElementById('toggle-btn'),
+    inputElement = document.getElementById('toggle');
+
+document.addEventListener('click', function(e) {
+    let isClickInside = specifiedElement.contains(e.target);
+    if (!isClickInside) {
+        if(inputElement.checked){
+            inputElement.checked = false;
+        }
+    } else {
+        e.preventDefault();
+        if(inputElement.checked){
+            inputElement.checked = false;
+        } else {
+            inputElement.checked = true;
+        }
+    }
+});
