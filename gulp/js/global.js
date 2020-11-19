@@ -26,10 +26,10 @@ const headerHTML = '<header id="header-menu" class="header-menu">' +
 const footerHTML = '<footer id="footer-menu" class="footer-menu">' +
     '<div class="container">' +
         '<div class="rrss-content">' +
-            '<a target="_blank" href="#" title="Ir a Facebook de Tamales Fiesta">' +
+            '<a target="_blank" href="https://www.facebook.com/julcesar17" title="Ir a Facebook de Tamales Fiesta">' +
                 '<img src="./assets/images/icons/facebook.png" alt="Logo Facebook">' +
             '</a>' +
-            '<a target="_blank" href="#" title="Ir a Instagram de Tamales Fiesta">' +
+            '<a target="_blank" href="https://www.instagram.com/julcesar17/" title="Ir a Instagram de Tamales Fiesta">' +
                 '<img src="./assets/images/icons/instagram.png" alt="Logo Instagram">' +
             '</a>' +
         '</div>' +
