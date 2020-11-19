@@ -2,6 +2,14 @@
     border-top: 3px solid $blue;
     padding: 15px 0;
     height: 106px;
+    position: relative;
+    .note{
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        z-index: 10;
+        text-align: end;
+    }
     .rrss-content{
         display: flex;
         justify-content: center;

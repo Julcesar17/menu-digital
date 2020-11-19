@@ -25,6 +25,7 @@ const headerHTML = '<header id="header-menu" class="header-menu">' +
 
 const footerHTML = '<footer id="footer-menu" class="footer-menu">' +
     '<div class="container">' +
+        '<p class="note">Pregunte por disponibilidad de los productos*</p>' +
         '<div class="rrss-content">' +
             '<a target="_blank" href="https://www.facebook.com/julcesar17" title="Ir a Facebook de Tamales Fiesta">' +
                 '<img src="./assets/images/icons/facebook.png" alt="Logo Facebook">' +
